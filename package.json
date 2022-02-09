@@ -1,7 +1,7 @@
 {
   "name": "martinb.dev",
   "version": "0.0.1",
-  "homepage": "https://martinb.dev",
+  "homepage": "https://martin-bucinskas.github.io/martinbdev",
   "private": true,
   "scripts": {
     "build": "hexo generate",
