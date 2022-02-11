@@ -1,6 +1,7 @@
 ---
 title: Will fully homomorphic encryption break the data harvesting market?
 date: 2022-02-10 23:11:11
+categories:
 tags:
  - fhe
  - fully homomorphic encryption
