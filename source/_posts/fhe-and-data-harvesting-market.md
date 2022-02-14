@@ -22,7 +22,7 @@ decrypted, altered with the desired computations and then re-encrypted.</p>
 <p>FHE allows applications to perform the desired computations without ever having the need to decrypt
 the original data, preserving the end-to-end privacy.</p>
 
-![Fully homomorphic encryption diagram](fhe-and-data-harvesting-market/fhe-diagram.png)
+![Fully homomorphic encryption diagram](images/fhe-and-data-harvesting-market/fhe-diagram.png)
 
 # So what is the big deal about it?
 
@@ -61,7 +61,7 @@ $234.6 billion by 2026<sup>[4]</sup>.</p>
 internet search indexing, scientific research studies, medical records, military surveillance, and eCommerce among others.
 Big data comprises gathering, analyzing, and using massive amounts of digital information to improve business operations, such as: Getting a 360-degree view of their audiences.</p>
 
-![Big data life-cycle](fhe-and-data-harvesting-market/big-data-lifecycle.png)
+![Big data life-cycle](images/fhe-and-data-harvesting-market/big-data-lifecycle.png)
 
 <p>Big data also comes with a risk. If data falls into the wrong hands, it can be used for targeted phishing, scams and spread disinformation<sup>[5]</sup>.
 Every year the number of data breaches increase, which just shows how important it is to keeping our data secure.</p>
