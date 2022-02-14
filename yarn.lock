@@ -746,6 +746,11 @@
     "cheerio" "^0.19.0"
     "entities" "^1.1.2"
 
+"hexo-asset-link@^2.1.1":
+  "integrity" "sha512-bKM7NzHducOrQzQHERuzQ3Ph4a68Enec9eLbqPSe234k+ayuGQzgknc3r22do7cjyTKDpuuZu2fEpkYLdFvUyA=="
+  "resolved" "https://registry.npmjs.org/hexo-asset-link/-/hexo-asset-link-2.1.1.tgz"
+  "version" "2.1.1"
+
 "hexo-cli@^4.0.0":
   "integrity" "sha512-lr46h1tK1RNQJAQZbzKYAWGsmqF5DLrW6xKEakqv/o9JqgdeempBjIm7HqjcZEUBpWij4EO65X6YJiDmT9LR7g=="
   "resolved" "https://registry.npmjs.org/hexo-cli/-/hexo-cli-4.3.0.tgz"
@@ -892,7 +897,7 @@
     "prismjs" "^1.17.1"
     "strip-indent" "^3.0.0"
 
-"hexo@^6.0.0":
+"hexo@^4.0.0 || ^5.0.0 || ^6.0.0", "hexo@^6.0.0":
   "integrity" "sha512-ffSOhOEwPCJt2Ch4DdCdX39WBv8IX8I8I7md08RMDYc6jqxmE2mpuU8wzFYEJ/FQVjrt/EsQ/qfKAz3zAW/hvw=="
   "resolved" "https://registry.npmjs.org/hexo/-/hexo-6.0.0.tgz"
   "version" "6.0.0"
