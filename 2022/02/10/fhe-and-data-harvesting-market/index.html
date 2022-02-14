@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="What is fully homomorphic encryption?Fully homomorphic encryption (FHE), often considered the holy grail of cyber-security by the experts (Van Dijk and Juels, 2010)[1], is an emerging, but not new con">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Will fully homomorphic encryption break the big data market?">
+<meta property="og:url" content="https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/">
+<meta property="og:site_name" content="martinb.dev">
+<meta property="og:description" content="What is fully homomorphic encryption?Fully homomorphic encryption (FHE), often considered the holy grail of cyber-security by the experts (Van Dijk and Juels, 2010)[1], is an emerging, but not new con">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://martinb.dev/.dev//fhe-diagram.png">
+<meta property="og:image" content="https://martinb.dev/.dev//big-data-lifecycle.png">
+<meta property="article:published_time" content="2022-02-10T23:11:11.000Z">
+<meta property="article:modified_time" content="2022-02-14T23:31:36.381Z">
+<meta property="article:author" content="Martin B">
+<meta property="article:tag" content="fhe">
+<meta property="article:tag" content="fully homomorphic encryption">
+<meta property="article:tag" content="data harvesting">
+<meta property="article:tag" content="big data">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://martinb.dev/.dev//fhe-diagram.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/android-chrome-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Will fully homomorphic encryption break the big data market?</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&text=Will fully homomorphic encryption break the big data market?"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&title=Will fully homomorphic encryption break the big data market?"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&is_video=false&description=Will fully homomorphic encryption break the big data market?"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Will fully homomorphic encryption break the big data market?&body=Check out this article: https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&title=Will fully homomorphic encryption break the big data market?"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&title=Will fully homomorphic encryption break the big data market?"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&title=Will fully homomorphic encryption break the big data market?"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&title=Will fully homomorphic encryption break the big data market?"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&name=Will fully homomorphic encryption break the big data market?&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&t=Will fully homomorphic encryption break the big data market?"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#What-is-fully-homomorphic-encryption"><span class="toc-number">1.</span> <span class="toc-text">What is fully homomorphic encryption?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#So-what-is-the-big-deal-about-it"><span class="toc-number">2.</span> <span class="toc-text">So what is the big deal about it?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Drawbacks-of-fully-homomorphic-encryption"><span class="toc-number">3.</span> <span class="toc-text">Drawbacks of fully homomorphic encryption</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#FHE-and-the-big-data-market"><span class="toc-number">4.</span> <span class="toc-text">FHE and the big data market</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Resources"><span class="toc-number">4.1.</span> <span class="toc-text">Resources</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Will fully homomorphic encryption break the big data market?
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Martin B</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-02-10T23:11:11.000Z" itemprop="datePublished">2022-02-10</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/thoughts/">thoughts</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/big-data/" rel="tag">big data</a>, <a class="tag-link-link" href="/tags/data-harvesting/" rel="tag">data harvesting</a>, <a class="tag-link-link" href="/tags/fhe/" rel="tag">fhe</a>, <a class="tag-link-link" href="/tags/fully-homomorphic-encryption/" rel="tag">fully homomorphic encryption</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="What-is-fully-homomorphic-encryption"><a href="#What-is-fully-homomorphic-encryption" class="headerlink" title="What is fully homomorphic encryption?"></a>What is fully homomorphic encryption?</h1><p>Fully homomorphic encryption (FHE), often considered the holy grail of cyber-security by the experts (Van Dijk and Juels, 2010)<sup>[1]</sup>, is
+an emerging, but not new concept which allows computations on encrypted data.</p>
+
+<p>Taking regular encryption, if the encrypted data would be required to be modified, the data would first need to be
+decrypted, altered with the desired computations and then re-encrypted.</p>
+
+<p>FHE allows applications to perform the desired computations without ever having the need to decrypt
+the original data, preserving the end-to-end privacy.</p>
+
+<p><img src="/.dev//fhe-diagram.png" alt="Fully homomorphic encryption diagram"></p>
+<h1 id="So-what-is-the-big-deal-about-it"><a href="#So-what-is-the-big-deal-about-it" class="headerlink" title="So what is the big deal about it?"></a>So what is the big deal about it?</h1><p>Due to the nature of FHE not requiring the data to be decrypted to perform calculations,
+privacy becomes a lot easier, where users would be able to delegate computation to 3rd parties
+such as cloud providers, where the cloud providers wouldn't have access to the users' data at all,
+keeping the secrets secret only for the data owner who has the private key.</p>
+
+<p>In today's world, security plays a big part in our every day life, especially when it comes to online security.
+All of our messages, photos, even our life revolve around the internet in one form or another.
+Take Google for example, in the midst of 2010, a Google employee was fired for reportedly accessing
+communications of at least four minors with Google accounts, spying on Google Voice call logs, chat transcripts
+and contact lists<sup>[2]</sup>.</p>
+
+<p>An implementation of FHE would have prevented this, where messages exchanged would have been performed over
+some FHE supported protocol, where the data is only readable by the data owner, but communication could still proceed
+via the use of FHEs unique behaviour of being able to compute on encrypted data.</p>
+
+<h1 id="Drawbacks-of-fully-homomorphic-encryption"><a href="#Drawbacks-of-fully-homomorphic-encryption" class="headerlink" title="Drawbacks of fully homomorphic encryption"></a>Drawbacks of fully homomorphic encryption</h1><p>The main problem with fully homomorphic encryption at this day and age is performance.
+Simply put, FHE is currently quite inefficient. Some simple operations can take anywhere from seconds to hours<sup>[3]</sup>.
+There are trade-offs to speed it up, but at the cost of utility, and vice-versa, sacrificing performance for better utility.
+The security could also be traded for better performance and utility, but what's the point?
+This is sort of becomes quite similar to the CAP theorem within databases, where any distributed data store can only provide two of the following three
+guarantees: consistency, availability, partition tolerance. Or in FHEs terms, performance, utility, protection.</p>
+
+<h1 id="FHE-and-the-big-data-market"><a href="#FHE-and-the-big-data-market" class="headerlink" title="FHE and the big data market"></a>FHE and the big data market</h1><p>An internet user may not think twice about the data that they share on the internet.
+However, the tin-foil security people will know how big the data harvesting market actually is.
+In U.S. alone, the big data market is estimated at $50.1 billion in 2021, with predictions that it will reach
+$234.6 billion by 2026<sup>[4]</sup>.</p>
+
+<p>Big data is generated from a variety of sources, such as, RFID readers, social networks, sensor networks, internet text and documents, call registers,
+internet search indexing, scientific research studies, medical records, military surveillance, and eCommerce among others.
+Big data comprises gathering, analyzing, and using massive amounts of digital information to improve business operations, such as: Getting a 360-degree view of their audiences.</p>
+
+<p><img src="/.dev//big-data-lifecycle.png" alt="Big data life-cycle"></p>
+<p>Big data also comes with a risk. If data falls into the wrong hands, it can be used for targeted phishing, scams and spread disinformation<sup>[5]</sup>.
+Every year the number of data breaches increase, which just shows how important it is to keeping our data secure.</p>
+
+<p>With the help of FHE, people would be able to ensure the safety of their data within sites such as social media or even within the government.
+This begs the question: what will happen to the big data companies if FHE becomes a modern practice and the performance issues have been resolved?</p>
+
+<p>How would the big data companies be able to harvest the data if the data is encrypted? Without having access to the decrypted data,
+big data companies would not be able to perform the normal processing of data, no phone number extractions, no medical records, no usable digital information.
+This would surely spell out a disaster for them, as their data is no longer a 360-degree view of the audience, but rather of some scrambled nonsense bits and bytes.
+Benefit for the common internet user, destroying the big data market.</p>
+
+<p>On the other hand, there may be a push to focus elsewhere. Rather than the actual information, big data could shift their focus to the functions performed on the data.
+A move towards processing and analysing the functions performed on data encrypted with FHE could still allow analysis and processing of data, but move the focus
+towards what is actually being done with the data.</p>
+
+<p>Because companies now wouldn't be dealing with what may have been private users data, this could even spark a wider
+boom in the big data market, where it's easier for companies to be on track in terms of different laws and governance around data, such as GDPR, and making data breaches far less
+impactful for the regular customers.</p>
+
+<p>But for now, we are still far away from this dream that fully homomorphic encryption promises us.</p>
+
+<h2 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h2><ul>
+<li>[1] - <a target="_blank" rel="noopener" href="http://www.arijuels.com/wp-content/uploads/2013/09/vDJ10.pdf">On the Impossibility of Cryptography Alone for Privacy-Preserving Cloud Computing</a></li>
+<li>[2] - <a target="_blank" rel="noopener" href="https://www.wired.com/2010/09/google-spy/">Ex-Googler Allegedly Spied on User E-Mails, Chats</a></li>
+<li>[3] - <a target="_blank" rel="noopener" href="https://link.springer.com/chapter/10.1007/978-3-642-20465-4_9">Implementing Gentry’s Fully-Homomorphic Encryption Scheme</a></li>
+<li>[4] - <a target="_blank" rel="noopener" href="https://www.prnewswire.com/news-releases/global-big-data-market-to-reach-234-6-billion-by-2026--301322252.html">Global Big Data Market to Reach $234.6 Billion by 2026 </a></li>
+<li>[5] - <a target="_blank" rel="noopener" href="https://careerfoundry.com/en/blog/data-analytics/is-big-data-dangerous/">Is Big Data Dangerous?</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.sciencedirect.com/topics/computer-science/fully-homomorphic-encryption">Fully Homomorphic Encryption</a></li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/tags/">Tags</a></li>
+         
+          <li><a href="/categories/">Categories</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#What-is-fully-homomorphic-encryption"><span class="toc-number">1.</span> <span class="toc-text">What is fully homomorphic encryption?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#So-what-is-the-big-deal-about-it"><span class="toc-number">2.</span> <span class="toc-text">So what is the big deal about it?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Drawbacks-of-fully-homomorphic-encryption"><span class="toc-number">3.</span> <span class="toc-text">Drawbacks of fully homomorphic encryption</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#FHE-and-the-big-data-market"><span class="toc-number">4.</span> <span class="toc-text">FHE and the big data market</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Resources"><span class="toc-number">4.1.</span> <span class="toc-text">Resources</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&text=Will fully homomorphic encryption break the big data market?"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&title=Will fully homomorphic encryption break the big data market?"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&is_video=false&description=Will fully homomorphic encryption break the big data market?"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Will fully homomorphic encryption break the big data market?&body=Check out this article: https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&title=Will fully homomorphic encryption break the big data market?"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&title=Will fully homomorphic encryption break the big data market?"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&title=Will fully homomorphic encryption break the big data market?"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&title=Will fully homomorphic encryption break the big data market?"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&name=Will fully homomorphic encryption break the big data market?&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://martinb.dev/2022/02/10/fhe-and-data-harvesting-market/&t=Will fully homomorphic encryption break the big data market?"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2022
+    Martin B
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
