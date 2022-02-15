@@ -28,16 +28,16 @@ the original data, preserving the end-to-end privacy.</p>
 
 <p>Due to the nature of FHE not requiring the data to be decrypted to perform calculations,
 privacy becomes a lot easier, where users would be able to delegate computation to 3rd parties
-such as cloud providers, where the cloud providers wouldn't have access to the users' data at all,
+such as cloud providers, where the cloud provider wouldn't have access to the users data at all,
 keeping the secrets secret only for the data owner who has the private key.</p>
 
 <p>In today's world, security plays a big part in our every day life, especially when it comes to online security.
-All of our messages, photos, even our life revolve around the internet in one form or another.
 Take Google for example, in the midst of 2010, a Google employee was fired for reportedly accessing
 communications of at least four minors with Google accounts, spying on Google Voice call logs, chat transcripts
-and contact lists<sup>[2]</sup>.</p>
+and contact lists<sup>[2]</sup>.
+All of our messages, photos, even our life revolve around the internet in one form or another.</p>
 
-<p>An implementation of FHE would have prevented this, where messages exchanged would have been performed over
+<p>An implementation of FHE might have prevented this, where messages exchanged would have been performed over
 some FHE supported protocol, where the data is only readable by the data owner, but communication could still proceed
 via the use of FHEs unique behaviour of being able to compute on encrypted data.</p>
 
@@ -47,13 +47,13 @@ via the use of FHEs unique behaviour of being able to compute on encrypted data.
 Simply put, FHE is currently quite inefficient. Some simple operations can take anywhere from seconds to hours<sup>[3]</sup>.
 There are trade-offs to speed it up, but at the cost of utility, and vice-versa, sacrificing performance for better utility.
 The security could also be traded for better performance and utility, but what's the point?
-This is sort of becomes quite similar to the CAP theorem within databases, where any distributed data store can only provide two of the following three
+This sort of becomes quite similar to the CAP theorem within databases, where any distributed data store can only provide two of the following three
 guarantees: consistency, availability, partition tolerance. Or in FHEs terms, performance, utility, protection.</p>
 
 # FHE and the big data market
 
 <p>An internet user may not think twice about the data that they share on the internet.
-However, the tin-foil security people will know how big the data harvesting market actually is.
+However, the tin-foil security people will know how big the big data market actually is.
 In U.S. alone, the big data market is estimated at $50.1 billion in 2021, with predictions that it will reach
 $234.6 billion by 2026<sup>[4]</sup>.</p>
 
