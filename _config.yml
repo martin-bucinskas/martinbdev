@@ -157,6 +157,7 @@ theme_config:
     enabled: true
     id: 09919b07-715a-4f4b-85ba-04da500ec663
     host: https://martinb.dev
+    script_name: https://analytics.umami.is/script.js
 
   rss:
 
