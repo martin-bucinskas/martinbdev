@@ -1,5 +1,5 @@
 ---
-title: API Design First Approach
+title: API design first approach
 date: 2023-05-08 22:41:04
 tags:
   - api
@@ -11,7 +11,7 @@ categories:
   - engineering
 ---
 
-# Intro
+# What and why?
 
 <p>Over the past few years, the software development industry has witnessed
 a significant shift towards the "API design first approach".

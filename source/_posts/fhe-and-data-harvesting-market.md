@@ -24,7 +24,7 @@ the original data, preserving the end-to-end privacy.</p>
 
 ![Fully homomorphic encryption diagram](images/fhe-and-data-harvesting-market/fhe-diagram.png)
 
-# So what is the big deal about it?
+## So what is the big deal about it?
 
 <p>Due to the nature of FHE not requiring the data to be decrypted to perform calculations,
 privacy becomes a lot easier, where users would be able to delegate computation to 3rd parties
@@ -41,7 +41,7 @@ All of our messages, photos, even our life revolve around the internet in one fo
 some FHE supported protocol, where the data is only readable by the data owner, but communication could still proceed
 via the use of FHEs unique behaviour of being able to compute on encrypted data.</p>
 
-# Drawbacks of fully homomorphic encryption
+## Drawbacks of fully homomorphic encryption
 
 <p>The main problem with fully homomorphic encryption at this day and age is performance.
 Simply put, FHE is currently quite inefficient. Some simple operations can take anywhere from seconds to hours<sup>[3]</sup>.
@@ -50,7 +50,7 @@ The security could also be traded for better performance and utility, but what's
 This sort of becomes quite similar to the CAP theorem within databases, where any distributed data store can only provide two of the following three
 guarantees: consistency, availability, partition tolerance. Or in FHEs terms, performance, utility, protection.</p>
 
-# FHE and the big data market
+## FHE and the big data market
 
 <p>An internet user may not think twice about the data that they share on the internet.
 However, the tin-foil security people will know how big the big data market actually is.
