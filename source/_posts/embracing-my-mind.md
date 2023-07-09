@@ -9,7 +9,7 @@ categories:
   - thoughts
 ---
 
-# Racing mind
+## The racing mind
 
 <p>It's as if my brain works on a different frequency. It's constantly abuzz,
 the gears never stopping, the cogs always turning. Like a freight train
@@ -45,7 +45,7 @@ take for granted, that is difficult. It's almost as if my brain works
 with a different set of rules, making it difficult to intuitively grasp the commonly
 accepted emotional norms.</p>
 
-## Wired for engineering
+### Wired for engineering
 
 <p>I often contemplate that my mind seems specifically crafted for engineering.
 I have this inherent, almost compulsive desire to deconstruct everything
@@ -62,7 +62,7 @@ successes - and maybe losses and demise, within the Software Engineering domain.
 
 ![Computers and servers](images/embracing-my-mind/computers-and-servers.png)
 
-### Work
+#### Work
 
 <p>At work, my mind can be both a blessing and a curse. I excel at identifying
 dependencies and solutions, potential problem areas, edge cases that others might overlook. However, my thoughts come forth in a cascade, not the tidy linear
@@ -81,7 +81,7 @@ a weight, something tangible I can return to and deal with when I'm ready.</p>
 with the rest of the team, untangling the interconnected thoughts into something
 that is clear and concise.</p>
 
-## Coping
+### Coping
 
 <p>To tame my racing mind, I've developed my own coping mechanisms.</p>
 
@@ -93,7 +93,7 @@ that is clear and concise.</p>
 They are like soothing lullabies for my constantly churning mind, creating a melodic
 symphony of thoughts, allowing me to exist in harmony with my unique way of being.</p>
 
-### Routine
+#### Routine
 
 <p>I've discovered that implementing patterns and regular routines can also serve as
 effective strategies to manage my unique challenges.
