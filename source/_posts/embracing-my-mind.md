@@ -43,7 +43,9 @@ I feel emotions deeply, perhaps too deep.
 It's the process of understanding, of deciphering the nuances that people often
 take for granted, that is difficult. It's almost as if my brain works
 with a different set of rules, making it difficult to intuitively grasp the commonly
-accepted emotional norms.</p>
+accepted emotional norms. Interactions with new people can be daunting, tending to avoid
+eye contact and trying hard to jumble the thoughts in the correct order as opposed to just
+blurt them out. Interactions drain the social battery quickly.</p>
 
 ### Wired for engineering
 
