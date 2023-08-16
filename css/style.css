@@ -1634,3 +1634,26 @@ code {
 .highlight .line {
   height: 22px;
 }
+.link-card {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+.link-card h4 a {
+  text-decoration: none;
+  color: #3498db;
+}
+.link-card .link-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.link-card .link-info .platform-language {
+  display: flex;
+  justify-content: space-between;
+}
+.link-card .link-info div {
+  font-size: 14px;
+}
