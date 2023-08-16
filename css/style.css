@@ -1641,7 +1641,7 @@ code {
   border-radius: 5px;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
-.link-card h4 a {
+.link-card h3 a {
   text-decoration: none;
   color: #3498db;
 }
@@ -1649,10 +1649,6 @@ code {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-.link-card .link-info .platform-language {
-  display: flex;
-  justify-content: space-between;
 }
 .link-card .link-info div {
   font-size: 14px;
